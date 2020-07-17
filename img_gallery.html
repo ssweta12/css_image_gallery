@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="referrer" content="origin-when-cross-origin" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <link href="css/img_gallery.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+</head>
+
+<body>
+<div class="container">
+    <div id="tabs--3">
+        <div class="tabs" role="tablist">
+            <input type="radio" id="tab-1" name="tabs" role="tab" aria-controls="panel1" checked>
+            <input type="radio" id="tab-2" name="tabs" role="tab" aria-controls="panel2">
+            <input type="radio" id="tab-3" name="tabs" role="tab" aria-controls="panel3">
+            <div class="tabs__lists">
+                <div class="tabs__lists__wrapper">
+                    <div class="tabs__lists__container">
+                        <label class="tabs__lists__list" for="tab-1">Gallery 1</label>
+                        <label class="tabs__lists__list" for="tab-2">Gallery 2</label>
+                        <label class="tabs__lists__list" for="tab-3">Gallery 3</label>
+                        <span class="tabs--slider"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="tabs__items">
+                <section class="tabs__item animate__animated animate__fadeIn" id="panel1" aria-labelledby="tab-1" role="tabpanel">
+                    <article>
+                        <input class="sizeIncrease50" id="size50" type="radio" name="sizeIncrease" value="50%" aria-hidden="true" />
+                        <label for="size50" class="last">50%</label>
+                        <input class="sizeIncrease75" id="size75" type="radio" name="sizeIncrease" value="75%" aria-hidden="true" />
+                        <label for="size75">75%</label>
+                        <input class="sizeIncrease125" id="size125" type="radio" name="sizeIncrease" value="125%" aria-hidden="true" />
+                        <label for="size125">125%</label>
+                        <input class="sizeReset" id="sizeReset" type="radio" name="sizeIncrease" value="125%" aria-hidden="true" />
+                        <label for="sizeReset">Reset</label>
+                        <ul class="gallery">
+                        <li class="gallery__item">
+                            <a href="#lightbox-1">
+                                <img src="images/cherry-plant.jpg" alt="Cherry plant" title="Cherry plant" loading="lazy" />
+                                <span>Image Description Comes here</span>
+                            </a>
+                        </li>
+                        <li class="gallery__item">
+                            <a href="#lightbox-2">
+                                <img src="images/oranges-pomegranates.jpg" alt="Oranges and Pomegranates" title="Oranges and Pomegranates" loading="lazy" />
+                                <span>Image Description Comes here</span>
+                            </a>
+                        </li>
+                        <li class="gallery__item">
+                            <a href="#lightbox-3">
+                                <img src="images/strawberry.jpg" alt="Strawberry" title="Strawberry" loading="lazy" />
+                                <span>Image Description Comes here</span>
+                            </a>
+                        </li>
+                        <li class="gallery__item">
+                            <a href="#lightbox-4">
+                                <img src="images/blueberries.jpg" alt="Blueberries" title="Blueberries" loading="lazy" />
+                                <span>Image Description Comes here</span>
+                            </a>
+                        </li>
+                        <li class="gallery__item">
+                            <a href="#lightbox-5">
+                                <img src="images/pears.jpg" alt="Pears" title="Pears" loading="lazy" />
+                                <span>Image Description Comes here</span>
+                            </a>
+                        </li>
+                        <li class="gallery__item">
+                            <a href="#lightbox-6">
+                                <img src="images/easter-eggs.jpg" alt="Easter-eggs" title="Easter-eggs" loading="lazy" />
+                                <span>Image Description Comes here</span>
+                            </a>
+                        </li>
+                        <li class="gallery__item">
+                            <a href="#lightbox-7">
+                                <img src="images/lemons.jpg" alt="Lemons" title="Lemons" loading="lazy" />
+                                <span>Image Description Comes here</span>
+                            </a>
+                        </li>
+                        <li class="gallery__item">
+                            <a href="#lightbox-8">
+                                <img src="images/cherries.jpg" alt="Cherries" title="Cherries" loading="lazy" />
+                                <span>Image Description Comes here</span>
+                            </a>
+                        </li>
+                        <li class="gallery__item">
+                            <a href="#lightbox-9">
+                                <img src="images/grapes.jpg" alt="Grapes" title="Grapes" loading="lazy" />
+                                <span>Image Description Comes here</span>
+                            </a>
+                        </li>
+                        <li class="gallery__item">
+                            <a href="#lightbox-10">
+                                <img src="images/cherry-plant.jpg" alt="Grapes" title="Grapes" loading="lazy" />
+                                <span>Image Description Comes here</span>
+                            </a>
+                        </li>
+                        </ul>
+                    </article>
+                </section>
+                <section class="tabs__item animate__animated animate__fadeIn" id="panel2" aria-labelledby="tab-2" role="tabpanel">
+                    <h2>Gallery 2 content</h2>
+                </section>
+                <section class="tabs__item animate__animated animate__fadeIn" id="panel3" aria-labelledby="tab-3" role="tabpanel">
+                    <h2>Gallery 3 content</h2>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <div class="lightbox" id="lightbox-1" aria-hidden="true">
+        <div class="content">
+            <figure>
+                <img src="images/cherry-plant.jpg" loading="lazy" />
+                <figcaption class="title">Image Description Comes here</figcaption>
+            </figure>
+            <a class="gallery__close" href="#gallery-untarget">Close</a>
+            <a class="gallery__next" href="#lightbox-2">Next</a>
+        </div>
+    </div>
+    <div class="lightbox" id="lightbox-2" aria-hidden="true">
+        <div class="content">
+            <figure>
+                <img src="images/oranges-pomegranates.jpg" loading="lazy" />
+                <figcaption class="title">Image Description Comes here</figcaption>
+            </figure>
+            <a class="gallery__close" href="#gallery-untarget">Close</a>
+            <a class="gallery__prev" href="#lightbox-1">Previous</a>
+            <a class="gallery__next" href="#lightbox-3">Next</a>
+        </div>
+    </div>
+    <div class="lightbox" id="lightbox-3" aria-hidden="true">
+        <div class="content">
+            <figure>
+                <img src="images/strawberry.jpg" loading="lazy" />
+                <figcaption class="title">Image Description Comes here</figcaption>
+            </figure>
+            <a class="gallery__close" href="#gallery-untarget">Close</a>
+            <a class="gallery__prev" href="#lightbox-2">Previous</a>
+            <a class="gallery__next" href="#lightbox-4">Next</a>
+        </div>
+    </div>
+    <div class="lightbox" id="lightbox-4" aria-hidden="true">
+        <div class="content">
+            <figure>
+                <img src="images/blueberries.jpg" loading="lazy" />
+                <figcaption class="title">Image Description Comes here</figcaption>
+            </figure>
+            <a class="gallery__close" href="#gallery-untarget">Close</a>
+            <a class="gallery__prev" href="#lightbox-3">Previous</a>
+            <a class="gallery__next" href="#lightbox-5">Next</a>
+        </div>
+    </div>
+    <div class="lightbox" id="lightbox-5" aria-hidden="true">
+        <div class="content">
+            <figure>
+                <img src="images/pears.jpg" loading="lazy" />
+                <figcaption class="title">Image Description Comes here</figcaption>
+            </figure>
+            <a class="gallery__close" href="#gallery-untarget">Close</a>
+            <a class="gallery__prev" href="#lightbox-4">Previous</a>
+            <a class="gallery__next" href="#lightbox-6">Next</a>
+        </div>
+    </div>
+    <div class="lightbox" id="lightbox-6" aria-hidden="true">
+        <div class="content">
+            <figure>
+                <img src="images/easter-eggs.jpg" loading="lazy" />
+                <figcaption class="title">Image Description Comes here</figcaption>
+            </figure>
+            <a class="gallery__close" href="#gallery-untarget">Close</a>
+            <a class="gallery__prev" href="#lightbox-5">Previous</a>
+            <a class="gallery__next" href="#lightbox-7">Next</a>
+        </div>
+    </div>
+    <div class="lightbox" id="lightbox-7" aria-hidden="true">
+        <div class="content">
+            <figure>
+                <img src="images/lemons.jpg" loading="lazy" />
+                <figcaption class="title">Image Description Comes here</figcaption>
+            </figure>
+            <a class="gallery__close" href="#gallery-untarget">Close</a>
+            <a class="gallery__prev" href="#lightbox-6">Previous</a>
+            <a class="gallery__next" href="#lightbox-8">Next</a>
+        </div>
+    </div>
+    <div class="lightbox" id="lightbox-8" aria-hidden="true">
+        <div class="content">
+            <figure>
+                <img src="images/cherries.jpg" loading="lazy" />
+                <figcaption class="title">Image Description Comes here</figcaption>
+            </figure>
+            <a class="gallery__close" href="#gallery-untarget">Close</a>
+            <a class="gallery__prev" href="#lightbox-7">Previous</a>
+            <a class="gallery__next" href="#lightbox-9">Next</a>
+        </div>
+    </div>
+    <div class="lightbox" id="lightbox-9" aria-hidden="true">
+        <div class="content">
+            <figure>
+                <img src="images/grapes.jpg" loading="lazy" />
+                <figcaption class="title">Image Description Comes here</figcaption>
+            </figure>
+            <a class="gallery__close" href="#gallery-untarget">Close</a>
+            <a class="gallery__prev" href="#lightbox-8">Previous</a>
+            <a class="gallery__next" href="#lightbox-10">Next</a>
+        </div>
+    </div>
+    <div class="lightbox" id="lightbox-10" aria-hidden="true">
+        <div class="content">
+            <figure>
+                <img src="images/cherry-plant.jpg" loading="lazy" />
+                <figcaption class="title">Image Description Comes here</figcaption>
+            </figure>
+            <a class="gallery__close" href="#gallery-untarget">Close</a>
+            <a class="gallery__prev" href="#lightbox-9">Previous</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
