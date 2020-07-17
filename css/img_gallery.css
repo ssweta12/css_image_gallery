@@ -176,7 +176,8 @@
           height: 100%;
           top: 0;
           left: 0;
-          background: #eee; }
+          background: rgba(0, 209, 183, 0.5);
+          z-index: 1; }
         #tabs--1 .tabs__item input[type="radio"] + label:hover, #tabs--1 .tabs__item input[type="radio"] + label:active {
           border-color: #000;
           color: #000; }
@@ -445,7 +446,8 @@
           height: 100%;
           top: 0;
           left: 0;
-          background: #eee; }
+          background: rgba(0, 209, 183, 0.5);
+          z-index: 1; }
         #tabs--2 .tabs__item input[type="radio"] + label:hover, #tabs--2 .tabs__item input[type="radio"] + label:active {
           border-color: #000;
           color: #000; }
@@ -732,7 +734,8 @@
           height: 100%;
           top: 0;
           left: 0;
-          background: #eee; }
+          background: rgba(0, 209, 183, 0.5);
+          z-index: 1; }
         #tabs--3 .tabs__item input[type="radio"] + label:hover, #tabs--3 .tabs__item input[type="radio"] + label:active {
           border-color: #000;
           color: #000; }
