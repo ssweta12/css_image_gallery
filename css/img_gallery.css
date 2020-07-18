@@ -866,7 +866,10 @@ body {
         color: #fff;
         display: block;
         font-size: 14px;
+        overflow: hidden;
         padding: 8px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
         width: 100%; }
     .gallery__item:hover img {
       opacity: 1; }
